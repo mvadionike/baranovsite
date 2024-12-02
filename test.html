@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Биография</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .left-side {
+            width: 40%;
+            background-image: url('https://via.placeholder.com/800x1200');
+            background-size: cover;
+            background-position: center;
+        }
+        .right-side {
+            width: 60%;
+            background-color: #ffffff;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        .right-side h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .right-side p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Левая часть с фоновым фото -->
+        <div class="left-side"><img src="baranov.jpg" alt="Фото" height="1200" width="800">
+            <!-- Фото установлено как фон через CSS -->
+        </div>
+        
+        <!-- Правая часть с текстом -->
+        <div class="right-side">
+            <h1>Заголовок</h1>
+            <p>Это пример текста, который ты можешь заменить своей информацией. Этот блок будет прокручиваться, если текст выйдет за пределы экрана.</p>
+            <p>Добавляй сюда больше текста для проверки прокрутки. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae nunc luctus consequat. Nam vehicula dui a arcu feugiat, sit amet tempus nulla laoreet.</p>
+            <p>Пример: здесь может находиться биография, описание или любая другая информация. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac pharetra orci, sit amet accumsan velit.</p>
+        </div>
+    </div>
+</body>
+</html>
